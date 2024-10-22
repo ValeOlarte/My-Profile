@@ -1,15 +1,55 @@
-/* General styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos base para dispositivos móviles */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #696969;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna por defecto */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 20px;
+}
+
+.item {
+    flex: 1 1 100%; /* Elementos ocupan el 100% del ancho en móviles */
+    max-width: 600px; /* Ancho máximo para los elementos */
+    margin: 10px; /* Espacio entre elementos */
+    padding: 15px;
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%; /* Las imágenes no excederán el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row; /* Cambia a fila en pantallas más grandes */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
+    }
+
+    .item {
+        flex: 1 1 45%; /* Elementos ocupan el 45% del ancho */
+    }
+}
+
+@media (min-width: 900px) {
+    .item {
+        flex: 1 1 30%; /* Elementos ocupan el 30% del ancho en pantallas grandes */
+    }
 }
 
 /* Header styles */
