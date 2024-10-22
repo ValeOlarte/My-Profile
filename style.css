@@ -207,12 +207,12 @@ li {
 }
 
 a {
-    color: #ff3b3b;
+    color: #EB0000;
     text-decoration: none;
 }
 
 a:hover {
-    color: #c0392b; /* Cambiar el color del enlace al pasar el ratón (opcional) */
+    color: #672018; /* Cambiar el color del enlace al pasar el ratón (opcional) */
     text-decoration: underline;
 }
 
