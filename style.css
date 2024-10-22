@@ -71,6 +71,8 @@ header {
 }
 
 h1 {
+    background-color: #00698f; /* Fondo azul oscuro */
+    color: #fff; /* Primer plano blanco */
     font-size: 2.5rem; /* Ajusta este tamaño según sea necesario */
 }
 
